@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body, li, a{
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    background: linear-gradient(135deg, #6878d6, #b08ce6);
+}
+input{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* Configurações gerais da página */
+
+header{
+    border: 1px solid white;
+    background: rgb(148, 161, 233);
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgb(97, 97, 172);
+}
+header img{
+    border: 1px solid rgb(214, 214, 214);
+}
+header nav a{
+    background: rgb(148, 161, 233);
+}
+.menu{
+    background: rgb(119, 132, 206);
+    color: rgba(255,255,255, 0.8);
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 7px;
+    transition: 0.4s;
+}
+.menu:hover{
+    background: rgb(60, 82, 177);
+    border: 1px solid white;
+}
+main{
+    border: 1px solid white;
+    background: rgb(148, 161, 233);
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgb(97, 97, 172);
+}
+main p{
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: -1px;
+    color: rgba(0,0,0,0.8);
+}
+form{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+form button{
+    border: 2px solid rgb(85, 85, 204);
+    transition: 0.4s;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0,0,0,0.8);
+}
+form button:hover{
+    cursor: pointer;
+    background: rgb(59, 146, 59);
+    color: white;
+}
+hr{
+    background: white;
+    width: 350px;
+    margin: 90px auto 20px auto;
+}
+footer p{
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+}
+
+
+
+/* Responsivo para mobile - 767px */
+
+@media(max-width: 767px){
+    header{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin: 10px auto 30px auto;
+        max-width: 550px;
+    }
+    header img{
+        width: 150px;
+        height: 150px;
+        margin: 5px;
+    }
+    .menu{
+        margin: 15px 0px 20px 0px;
+        padding: 9px;
+    }
+    main{
+        margin: 10px auto 10px auto;
+        max-width: 550px;
+        text-align: center;
+    }
+    main p{
+        margin: 30px 0px 20px 0px;
+        text-align: center;
+        font-size: 30px;
+    }
+    form input[type=text]{
+        width: 200px;
+        height: 30px;
+        font-size: 20px;
+        margin: 10px;
+    }
+    form input[type=number]{
+        width: 200px;
+        height: 30px;
+        font-size: 20px;
+        margin: 10px;
+    }
+    form button{
+        width: 160px;
+        height: 40px;
+        font-size: 21px;
+        margin: 15px;
+        border-radius: 5px;
+    }
+    footer{
+        margin: 50px auto 15px auto;
+        max-width: 550px;
+    }
+    footer p{
+        font-size: 20px;
+    }
+}
+
+
+
+/* Responsivo para telas médias - min 768px e max 1023px */
+
+@media(min-width: 768px) and (max-width: 1023px){
+    header{
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        justify-content: space-between;
+    }
+    header img{
+        width: 150px;
+        height: 150px;
+        margin: 3px;
+    }
+    nav{
+        display: flex;
+    }
+    .menu{
+        margin: 0px 10px 0px 0px;
+        padding: 10px;
+        font-size: 16px;
+    }
+    main{
+        margin: 40px 10px 10px 10px;
+        text-align: center;
+    }
+    main p{
+        margin: 30px 0px 20px 0px;
+        text-align: center;
+        font-size: 33px;
+    }
+    form input[type=text]{
+        width: 310px;
+        height: 30px;
+        font-size: 20px;
+        margin: 10px;
+    }
+    form input[type=number]{
+        width: 310px;
+        height: 30px;
+        font-size: 20px;
+        margin: 10px;
+    }
+    form button{
+        width: 200px;
+        height: 40px;
+        font-size: 23px;
+        margin: 20px;
+        border-radius: 5px;
+    }
+    footer{
+        margin: 50px auto 18px auto;
+        max-width: 940px;
+    }
+    footer p{
+        font-size: 21px;
+    }
+}
+
+
+
+/* Responsivo para telas grandes - min 1024px*/
+
+@media(min-width: 1024px){
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px auto;
+        max-width: 940px;
+    }
+    header img{
+        width: 170px;
+        height: 170px;
+        margin: 15px;
+    }
+    nav{
+        display: flex;
+    }
+    .menu{
+        margin: 0px 10px 0px 0px;
+        padding: 10px;
+        font-size: 18px;
+    }
+    main{
+        margin: 45px auto;
+        max-width: 940px;
+        text-align: center;
+    }
+    main p{
+        margin: 30px 0px 20px 0px;
+        text-align: center;
+        font-size: 35px;
+    }
+    form input[type=text]{
+        width: 310px;
+        height: 35px;
+        font-size: 20px;
+        margin: 10px;
+    }
+    form input[type=number]{
+        width: 310px;
+        height: 35px;
+        font-size: 20px;
+        margin: 10px;
+    }
+    form button{
+        width: 200px;
+        height: 40px;
+        font-size: 23px;
+        margin: 25px;
+        border-radius: 5px;
+    }
+    footer{
+        margin: 50px auto 18px auto;
+        max-width: 940px;
+    }
+    footer p{
+        font-size: 23px;
+    }
+}
